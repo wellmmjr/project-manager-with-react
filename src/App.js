@@ -1,6 +1,8 @@
-import {BrowserRouter, Router, Route, Switch, Link} from 'react-router-dom'
-import {NewProject} from './componets/pages/NewProject'
-import {Home} from './componets/pages/Home'
+import { Router, Route, Routes, Link} from 'react-router-dom'
+import {NewProject} from './componets/pages/project/newProject/NewProject'
+import {Project} from './componets/pages/project/Project'
+import {ProjectGrid} from './componets/pages/project/projectGrid/ProjectGrid'
+import {Home} from './componets/pages/home/Home'
 
 import Container from './components/layout/Container/Container';
 import NavBar from './components/layout/navbar/NavBar';
@@ -13,16 +15,22 @@ function App() {
     <Router>
       <NavBar/>
 
-      <Switch>
+      <Routes>
         <Container customClass="min-heigth">
           <Route path="/" exact >
             <Home/>
+          </Route>
+          <Route path="/projectGrid" >
+            <ProjectGrid/>
+          </Route>
+          <Route path="/project" >
+            <Project/>
           </Route>
           <Route path="/newproject" >
             <NewProject/>
           </Route>
         </Container>
-      </Switch>
+      </Routes>
       <Footer/>
     </Router>
   );
