@@ -2,7 +2,11 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background-color: rgb(65, 18, 18);
+    background-color: #411212;
+}
+
+.navbar IoIosDesktop{
+    font-size: 2em;
 }
 
 .list{
@@ -22,4 +26,13 @@
 
 .item a:hover{
     color: white;
+}
+
+.navbar .logo{
+    min-height: 2rem;
+    min-width: 2rem;
+    max-height: 3rem;
+    max-width: 3rem;
+    border-radius: 50%;
+    flex-grow: block;
 }

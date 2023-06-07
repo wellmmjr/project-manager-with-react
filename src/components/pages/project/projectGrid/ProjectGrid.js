@@ -3,7 +3,7 @@ import {FaInstagram, FaLinkedin} from 'react-icons/fa'
 
 function ProjectGrid(){
     return (
-        <p></p>
+        <p>soon ill be a form</p>
     )
 }
 
